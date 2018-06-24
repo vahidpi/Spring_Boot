@@ -31,8 +31,6 @@ Here is what this little application demonstrates:
 
 * Full integration with the latest Spring Framework: inversion of control, dependency injection, etc.
 * No need to install a container separately on the host just run using the java -jar command
-* Demonstrates how to set up healthcheck, metrics, info, environment, etc. endpoints automatically on a configured port. Inject your own health / metrics info with a few lines of code.
-* Writing a RESTful service using annotation: supports both XML and JSON request / response; simply use desired Accept header in your request
 * Exception mapping from application exceptions to the right HTTP response with exception details in the body
 * The out put is under JSON format
 ```
