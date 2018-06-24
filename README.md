@@ -1,6 +1,6 @@
 # Spring Boot REST service
 
-This is a Java, Maven, Spring Boot (version 2.0.3) test application that was created because of PAF Coding exercise.
+This is a Java, Maven, Spring Boot (version 2.0.3) test application that returns the balance and currency for a given user. it was created because of PAF Coding exercise.
 
 ## How to Run
 This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary. You run it using the java -jar command.
@@ -30,12 +30,20 @@ You can use this sample service to understand the conventions and configurations
 Here is what this little application demonstrates:
 
 * Full integration with the latest Spring Framework: inversion of control, dependency injection, etc.
-* Packaging as a single war with embedded container (tomcat 8): No need to install a container separately on the host just run using the java -jar command
+* No need to install a container separately on the host just run using the java -jar command
 * Demonstrates how to set up healthcheck, metrics, info, environment, etc. endpoints automatically on a configured port. Inject your own health / metrics info with a few lines of code.
 * Writing a RESTful service using annotation: supports both XML and JSON request / response; simply use desired Accept header in your request
 * Exception mapping from application exceptions to the right HTTP response with exception details in the body
-* Spring Data Integration with JPA/Hibernate with just a few lines of configuration and familiar annotations.
-* Automatic CRUD functionality against the data source using Spring Repository pattern
-* Demonstrates MockMVC test framework with associated libraries
-* All APIs are "self-documented" by Swagger2 using annotations
+* The out put is under JSON format
+```
+      {
+            "balance": "9",
+            "currency": "X"
+      }
+```
 * Here are some endpoints you can call:
+### Get balance and currency for a given user.
+Send request in below format. it must contain id and username.
+```
+http://localhost:8080/myservice/balance?id=3&username=XYZ
+```
