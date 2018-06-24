@@ -1,11 +1,12 @@
 # Spring Boot REST service
 
-This is a Java, Maven, Spring Boot (version 2.0.3) test application that was created because os PAF Coding exercise.
+This is a Java, Maven, Spring Boot (version 2.0.3) test application that was created because of PAF Coding exercise.
 
 ## How to Run
 This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary. You run it using the java -jar command.
 * Clone this repository
 * Make sure you are using [JDK 1.8](https://www.java.com/en/download/) and [Maven 3.x](https://maven.apache.org/)
+* Be sure that 8080 port is free at the moment
 * You can build the project and run the tests by running 
 ```
       mvn clean install
